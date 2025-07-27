@@ -5,10 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- ✅ SEO Title -->
-  <title>Free Invoice Generator Online - No Login Required</title>
+  <title>Free Invoice Generator (No Login) | Smart Online Invoice Tool</title>
 
-  <!-- ✅ Meta Description for SEO -->
+  <!-- ✅ SEO Meta Tags -->
   <meta name="description" content="Create professional invoices online for free with our simple invoice generator. No login or signup required. Download and print invoices instantly.">
+  <meta name="keywords" content="invoice generator, free invoice, invoice maker, no login invoice, printable invoice, create invoice online">
+  <meta name="author" content="Asifa">
+  <meta name="robots" content="index, follow">
 
   <style>
     body {
@@ -20,6 +23,12 @@
     }
     h1 {
       text-align: center;
+    }
+    p.intro {
+      text-align: center;
+      font-size: 1.1em;
+      max-width: 700px;
+      margin: 0 auto;
     }
     table {
       width: 100%;
@@ -53,14 +62,15 @@
 <body>
 
   <!-- ✅ SEO Optimized H1 -->
-  <h1>Free Invoice Generator — No Login or Signup</h1>
+  <h1>Free Invoice Generator (No Login Required)</h1>
 
   <!-- ✅ Intro Paragraph for SEO -->
-  <p style="text-align:center; font-size: 1.1em; max-width: 700px; margin: 0 auto;">
-    Need a quick and easy way to generate invoices online? Use our free invoice maker — no sign-in required. Perfect for freelancers, small businesses, and service providers to create professional invoices instantly with tax support.
+  <p class="intro">
+    This free invoice generator helps freelancers, small businesses, and professionals create and download invoices quickly—without creating an account. 
+    Ideal for one-time invoices, service bills, and printable receipts.
   </p>
 
-  <!-- Optional: Add logo if you want -->
+  <!-- Optional Logo -->
   <!-- <img src="logo.png" alt="Free Invoice Generator Logo" style="display:block;margin:20px auto;"> -->
 
   <table id="invoiceTable">
@@ -93,7 +103,7 @@
 
   <div id="total">Grand Total: $0.00</div>
 
-  <button onclick="A()">Calculate Total</button>
+  <button onclick="calculateTotal()">Calculate Total</button>
   <button onclick="window.print()">Print Invoice</button>
 
   <script>
